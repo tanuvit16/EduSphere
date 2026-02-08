@@ -1,0 +1,74 @@
+.campus-section {
+  margin: 80px auto;
+  width: 90%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.campus-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2%;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.gallery-item {
+  width: 23%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.btn.dark-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #6a1b9a;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn.dark-btn:hover {
+  background-color: #8e44ad;
+  transform: translateY(-2px);
+}
+.btn.dark-btn img {
+  width: 20px;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .gallery-item {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  .campus-title {
+    font-size: 28px;
+  }
+}
